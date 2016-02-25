@@ -1,3 +1,7 @@
+set nocompatible              					"We want the latest Vim settings/options
+
+so ~/.vim/plugins.vim 
+
 syntax enable 
 
 set backspace=indent,eol,start					"Make backspace behave like every other editor
@@ -11,6 +15,18 @@ let mapleader = ','						"The default leader is \, but a comma is much better
 set hlsearch
 set incsearch
 
+
+
+
+
+"-------------Split management----------------"
+set splitbelow
+set splitright
+
+nmap <C-J> <C-W><C-J>
+nmap <C-K> <C-W><C-K>
+nmap <C-H> <C-W><C-H>
+nmap <C-L> <C-W><C-L>
 
 
 
@@ -30,7 +46,8 @@ set number							"Let's activate line numbers.
 nmap <Leader>ev :tabedit $MYVIMRC<cr>
 "Add simple highlight removal.
 nmap <Leader><space> :nohlsearch<cr>
-
+"Make NERDTree easier to toggle
+nmap <Leader>1 :NERDTreeToggle<cr>
 
 
 
