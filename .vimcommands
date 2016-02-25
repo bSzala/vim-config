@@ -1,0 +1,36 @@
+---------------INTRODUCTION-----------------
+" If you using a small device like laptop, tablet or 
+" a custom keybord, then some of the listed commands will be impossible
+" to touch at the same time.
+" Fortunately for Us, we can hit them one by one.
+
+
+
+
+
+-------------Vimrc commands------------------
+:PluginInstall		"Install plugins specified in Vundle.vim (which is vim plugin manager) 
+
+
+
+
+
+--------------Normal mode--------------------
+:tabc      		"Close tab 
+:so %      		"Save source output of a current file
+:ls        		"Show a list of files available in bufer 
+:bp        		"Load previous file from bufer
+:b1        		"Load first file from bufer (use :ls to see available list of files in bufer)
+:vsp       		"Vertical window split
+:sp        		"Horizontal split
+ctrl + w _ 		"Max out the height of the current split
+ctrl + w | 		"Max out the width of the current 
+ctrl + w = 		"Normalize all split sizes, which is very handy when resizing terminal
+:e.	   		"Opens current directory structure
+
+
+
+
+
+------------Visual mode----------------------
+zz        		"Center current line on the screen
