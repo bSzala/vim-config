@@ -1,4 +1,5 @@
 set nocompatible              					"We want the latest Vim settings/options
+set shell=/bin/bash						"Set used shell type
 
 so ~/.vim/plugins.vim 
 
@@ -48,6 +49,8 @@ nmap <Leader>ev :tabedit $MYVIMRC<cr>
 nmap <Leader><space> :nohlsearch<cr>
 "Make NERDTree easier to toggle
 nmap <Leader>1 :NERDTreeToggle<cr>
+"Search in a file methods, variables etc.
+nmap <c-R> :CtrlPBufTag<cr>
 
 
 
