@@ -27,10 +27,19 @@ ctrl + w _ 		"Max out the height of the current split
 ctrl + w | 		"Max out the width of the current 
 ctrl + w = 		"Normalize all split sizes, which is very handy when resizing terminal
 :e.	   		"Opens current directory structure
-
+,space 			"Remove select highlight
+ctrl + P 		"Search for a file (This is a mapped command by using custom search plugin)
 
 
 
 
 ------------Visual mode----------------------
 zz        		"Center current line on the screen
+V			"Select entire line
+v			"Begin character-based visual selection
+c			"Change selected text
+y			"Yank copy selected text
+d 			"Delete selected text
+p			"Paste after the cursor
+P			"Paste befor the cursor
+"+y			"Copy selected text outside vim (Yank text into the "clipboard register")
