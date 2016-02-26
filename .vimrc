@@ -51,8 +51,10 @@ nmap <Leader><space> :nohlsearch<cr>
 nmap <Leader>1 :NERDTreeToggle<cr>
 "Search in a file methods, variables etc.
 nmap <c-R> :CtrlPBufTag<cr>
-
-
+"Show a list of most recently used files
+nmap <c-e> :CtrlPMRUFiles<cr>
+"Read pdf text in vim
+:command! -complete=file -nargs=1 Rpdf :r !pdftotext -nopgbrk <q-args> - |fmt -csw78
 
 "--------------Mappings ----------------"
 
@@ -66,3 +68,20 @@ augroup  autosouring
 	autocmd!
 	autocmd BufWritePost .vimrc source %
 augroup END
+
+
+
+
+
+"------------Plugins-------------"
+
+"/ 
+"/ CtrlP
+"/
+let g:ctrlp_custom_ignore = 'node_modules\|git'
+let g:ctrlp_match_window = 'top,order:ttb,min:1,max:30,results:30'
+
+
+
+
+
