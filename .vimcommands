@@ -8,6 +8,13 @@
 
 
 
+-------------Commands outside vim------------------
+ctags -R 		"Create tags recursively (very useful to find quickly any method)
+
+
+
+
+
 -------------Vimrc commands------------------
 :PluginInstall		"Install plugins specified in Vundle.vim (which is vim plugin manager) 
 
@@ -29,6 +36,15 @@ ctrl + w = 		"Normalize all split sizes, which is very handy when resizing termi
 :e.	   		"Opens current directory structure
 ,space 			"Remove select highlight
 ctrl + P 		"Search for a file (This is a mapped command by using custom search plugin)
+d + i + )		"Delete everything inside brackets
+d + i + '		"Delete everything inside quotes
+:tag methodName		"Find quickly method by methodname (it works only if ctags -R executed before)
+:! command		"Execute shell commands from inside vim 
+:tn 			"Go to next tag
+:tp			"Go to previous tag
+:ts			"Show a list with all available tag usage 
+ctrl + ]		"Go to method definition
+
 
 
 
@@ -43,3 +59,6 @@ d 			"Delete selected text
 p			"Paste after the cursor
 P			"Paste befor the cursor
 "+y			"Copy selected text outside vim (Yank text into the "clipboard register")
+i + ' 			"Select everything inside quotes
+i + )			"Select everything inside brackets
+i + {			"Select everything inside method body

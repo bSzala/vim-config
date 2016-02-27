@@ -32,11 +32,17 @@ nmap <C-L> <C-W><C-L>
 
 
 
+
 "--------------Visuals-------------------"
 colorscheme atom-dark-256
 set t_CO=256							"Use 256 colors. This is useful for Terminal Vim.
 set linespace=15						"Set's a space between lines.
-set number							"Let's activate line numbers.
+set nonumber							"Let's deactivate line numbers.
+highlight LineNr ctermfg=grey ctermbg=bg
+set foldcolumn=2						"Add left padding 
+hi foldcolumn ctermbg=bg
+"Change vertical split background & foreground color
+hi vertsplit ctermfg=bg ctermbg=bg
 
 
 
@@ -47,16 +53,8 @@ set number							"Let's activate line numbers.
 nmap <Leader>ev :tabedit $MYVIMRC<cr>
 "Add simple highlight removal.
 nmap <Leader><space> :nohlsearch<cr>
-"Make NERDTree easier to toggle
-nmap <Leader>1 :NERDTreeToggle<cr>
-"Search in a file methods, variables etc.
-nmap <c-R> :CtrlPBufTag<cr>
-"Show a list of most recently used files
-nmap <c-e> :CtrlPMRUFiles<cr>
-"Read pdf text in vim
-:command! -complete=file -nargs=1 Rpdf :r !pdftotext -nopgbrk <q-args> - |fmt -csw78
 
-"--------------Mappings ----------------"
+nmap <leader>f :tag<space>
 
 
 
@@ -81,7 +79,21 @@ augroup END
 let g:ctrlp_custom_ignore = 'node_modules\|git'
 let g:ctrlp_match_window = 'top,order:ttb,min:1,max:30,results:30'
 
+"Search in a file methods, variables etc.
+nmap <c-R> :CtrlPBufTag<cr>
+"Show a list of most recently used files
+nmap <c-e> :CtrlPMRUFiles<cr>
 
 
+
+
+
+"/
+"/ Nerdtree
+"/
+let NERDTreeHijackNetrw = 0
+
+"Make NERDTree easier to toggle
+nmap <Leader>1 :NERDTreeToggle<cr>
 
 
