@@ -44,6 +44,11 @@ d + i + '		"Delete everything inside quotes
 :tp			"Go to previous tag
 :ts			"Show a list with all available tag usage 
 ctrl + ]		"Go to method definition
+:s/text/replaceText	"At first we need to select entire line/s, then we type a command. 
+			"Command will find all occurences of text and then will replace it with replaceText.
+:Gsearch		"Execute a search
+:Greplace		"Replace whatever we change with Gsearch command
+:wa			"Write all files
 
 
 
