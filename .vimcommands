@@ -67,3 +67,9 @@ P			"Paste befor the cursor
 i + ' 			"Select everything inside quotes
 i + )			"Select everything inside brackets
 i + {			"Select everything inside method body
+
+
+------------Insert mode----------------------
+Hit snippet shortcut and press type to load your custom snippets
+
+

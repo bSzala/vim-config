@@ -49,10 +49,13 @@ hi vertsplit ctermfg=bg ctermbg=bg
 
 
 "--------------Mappings ----------------"
-" Make it easy to edit to Vimrc file."
+"Make it easy to edit to Vimrc file."
 nmap <Leader>ev :tabedit $MYVIMRC<cr>
+"Edit snippets file"
+nmap <Leader>es :tabedit ~/.vim/snippets/
 "Add simple highlight removal.
 nmap <Leader><space> :nohlsearch<cr>
+
 
 nmap <leader>f :tag<space>
 
@@ -106,7 +109,7 @@ set grepprg=ag								"We want to use Ag for a search
 let g:grep_cmd_opts = '--line-numbers --noheading'
 
 
-
-
-
-
+"-----------Laravel-Specific---------"
+nmap <Leader>lr :e app/Http/routes.php<cr>		
+nmap <Leader>lm :!php artisan make:			
+nmap <Leader>lfc :CtrlP<cr>app/Http/Controllers/ 
