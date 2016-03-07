@@ -11,6 +11,7 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'rking/ag.vim'
 Plugin 'skwp/greplace.vim'
 Plugin 'msanders/snipmate.vim'
+Plugin 'tpope/vim-surround'
 
 
 " All of your Plugins must be added before the following line
