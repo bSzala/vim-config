@@ -70,8 +70,29 @@ augroup  autosouring
 	autocmd BufWritePost .vimrc source %
 augroup END
 
+"Automatically adds the corresponding use statement for the class under the
+"cursor.
+function! IPhpInsertUse()
+	    call PhpInsertUse()
+	        call feedkeys('a',  'n')
+	endfunction
+	autocmd FileType php inoremap <Leader>n <Esc>:call IPhpInsertUse()<CR>
+	autocmd FileType php noremap <Leader>n :call PhpInsertUse()<CR>
+
+"Expands the class name under the cursor to its fully qualified name
+"Can Be used also when adding use statement above class name
+function! IPhpExpandClass()
+	    call PhpExpandClass()
+	        call feedkeys('a', 'n')
+	endfunction
+	autocmd FileType php inoremap <Leader>nf <Esc>:call IPhpExpandClass()<CR>
+	autocmd FileType php noremap <Leader>nf :call PhpExpandClass()<CR>
 
 
+
+"Sort PHP use statements 
+"http://stackoverflow.com/questions/11531073/how-do-you-sort-a-range-of-lines-by-length
+vmap <Leader>su ! awk '{ print length(), $0 \| "sort -n \| cut -d\\  -f2-" }'<CR>
 
 
 "------------Plugins-------------"

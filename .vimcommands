@@ -53,7 +53,8 @@ cs symbol replacement   "cs (change surrounding) symbol (what we want to change)
 ds symbol		"Delete surrounding symbol (for example ds ' -> will delete surrounding single quotes)
 dst 			"Delete surrounding tag (very usefull when working with html tags for example to delete surrounding divs)
 sst			"Change surrounding tag (if we would like to replace exisitng tag with something else)"
-
+<leader>nf		"Expands the class name under the cursor to its fully qualified name
+<leader>n		"Automatically adds the corresponding use statement for the class under the cursor.
 
 
 
@@ -70,6 +71,9 @@ P			"Paste befor the cursor
 i + ' 			"Select everything inside quotes
 i + )			"Select everything inside brackets
 i + {			"Select everything inside method body
+:sort			"Sort selected values in alphabetic order
+<leader>su		"Sort use statements by the length of the lines
+
 
 
 ------------Insert mode----------------------
