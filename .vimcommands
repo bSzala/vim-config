@@ -59,6 +59,19 @@ sst			"Change surrounding tag (if we would like to replace exisitng tag with som
 <leader>nf		"Expands the class name under the cursor to its fully qualified name
 <leader>n		"Automatically adds the corresponding use statement for the class under the cursor.
 shift + j 		"Join two lines into one line. (Cursor must be on the first line, so when we trigger this command then second line will be moved into the first one.)
+<leader>pf 		"Trigger php-cs-fixer. Format php code according to psr-2 standard
+ctrl + 6 		"Go to previous file
+ctrl + e 		"Show a list with previous open files. It makes easy to switch between recently open files
+ctrl + o 		"Jumps to your previous edit point sequentialy
+ctrl + i 		"Jumps to your next edit point sequentialy (oposite of ctrl + o)
+m + markLetter 		"Create a mark by using specific letter (If you use small letter as a mark then You can use this mark within a file)
+m + capitalLetter       "Create a mark available globally
+:marks 			"Show a list with available marks (marks are like pointers within a files)
+' + smallMarkLetter  	"Within a file press single quote with mark letter to move cursor to your created mark. 
+' + capitalMarkLetter 	"Move cursor to Your created mark from any file You wish. (global access)
+` + ' + capitalLetter 	"Move cursor to marked exact possition
+. 			"Repeats a last operation
+
 
 
 
@@ -77,6 +90,9 @@ i + )			"Select everything inside brackets
 i + {			"Select everything inside method body
 :sort			"Sort selected values in alphabetic order
 <leader>su		"Sort use statements by the length of the lines
+ctrl + d 		"Select block of code 
+d 			"Stop selection
+j 			"Every time is pressed, then new line is selected (use d to stop selection)
 
 
 
@@ -84,5 +100,6 @@ i + {			"Select everything inside method body
 Hit snippet shortcut and press type to load your custom snippets
 :Ctrl+n 		"Triggers autocompletion
 TAB 			"Trigger autocompletion
+shift + v 		"Switch to visual mode 
 
 
