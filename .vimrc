@@ -7,6 +7,8 @@ syntax enable
 
 set backspace=indent,eol,start					"Make backspace behave like every other editor
 let mapleader = ','						"The default leader is \, but a comma is much better
+set autowriteall                                                "Automatically write the file when switching buffers
+set complete=.,w,b,u 						"Set our desired autocompletion matching.
 
 
 

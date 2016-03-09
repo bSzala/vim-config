@@ -27,7 +27,10 @@ ctags -R 		"Create tags recursively (very useful to find quickly any method)
 :so %      		"Save source output of a current file
 :ls        		"Show a list of files available in bufer 
 :bp        		"Load previous file from bufer
-:b1        		"Load first file from bufer (use :ls to see available list of files in bufer)
+:bd			"Destroy current buffer
+:bd + number		"Destroy buffer with given number
+:b+number        	"Load file from bufer witch has a given number  (use :ls to see available list of files in bufer)
+:sbuffer+number		"Make a split by putting in a split specific file from buffer (use :ls to find a file number)
 :vsp       		"Vertical window split
 :sp        		"Horizontal split
 ctrl + w _ 		"Max out the height of the current split
@@ -55,6 +58,7 @@ dst 			"Delete surrounding tag (very usefull when working with html tags for exa
 sst			"Change surrounding tag (if we would like to replace exisitng tag with something else)"
 <leader>nf		"Expands the class name under the cursor to its fully qualified name
 <leader>n		"Automatically adds the corresponding use statement for the class under the cursor.
+shift + j 		"Join two lines into one line. (Cursor must be on the first line, so when we trigger this command then second line will be moved into the first one.)
 
 
 
@@ -78,5 +82,7 @@ i + {			"Select everything inside method body
 
 ------------Insert mode----------------------
 Hit snippet shortcut and press type to load your custom snippets
+:Ctrl+n 		"Triggers autocompletion
+TAB 			"Trigger autocompletion
 
 
